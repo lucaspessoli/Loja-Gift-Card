@@ -11,8 +11,7 @@ function Navegation(){
                     {/* <a classname="logo"><Link to="/">CARD STORE</Link></a> */}
                     <ul className="nav-list">
                     <Link to="/register" style={{textDecoration: "none"}}><li>Registrar</li></Link>
-                    <Link to="/login" style={{textDecoration: "none"}}><li>Login</li></Link>
-                    <Link to="/loja" style={{textDecoration: "none"}}><li>LOJA</li></Link>
+                    <Link to="/cart" style={{textDecoration: "none"}}><li>CARRINHO</li></Link>
                     </ul>
                 </nav>
             </header>
