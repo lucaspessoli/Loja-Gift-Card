@@ -1,0 +1,14 @@
+{
+    "giftCards": [
+        {
+            "giftCard10":{
+                "steam": {
+                    "estoque": 100
+                },
+                "ifood": {
+                    "estoque": 299
+                }
+            }
+        }
+    ]
+}
