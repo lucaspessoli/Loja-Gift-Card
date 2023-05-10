@@ -10,5 +10,16 @@
                 }
             }
         }
+    ],
+    "users": [
+        {
+            "userAccount":{
+                "id": 1,
+                "username": "adm",
+                "password": "adm",
+                "saldo": 0
+            }
+        }
     ]
+    
 }
