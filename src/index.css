@@ -79,10 +79,11 @@ hr{
   border-style: solid;
   border-color: black;
   height: 400px;
-  width: 200px;
+  width: 120px;
   margin: 0 auto;
   /* margin-right: 330px; */
   display: inline-block;
+  overflow-y: auto;
 }
 
 .checkCards{
@@ -94,4 +95,9 @@ hr{
   margin-left: 5px;
   display: inline-block;
   vertical-align: top;
+}
+
+.buttonCard{
+  background-color: #FFF;
+  height: 100px;
 }

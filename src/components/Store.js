@@ -36,7 +36,11 @@ function Store(){
             { visivel ? (
             <div>
                 <div className="exploreCards">
-
+                    <button className="buttonCard"><img src={db.steam.image} height={100} width={100}/></button>
+                    <button className="buttonCard"><img src={db.ifood.image} height={100} width={100}/></button>
+                    <button className="buttonCard"><img src={db.playstore.image} height={100} width={100}/></button>
+                    <button className="buttonCard"><img src={db.playstation.image} height={100} width={100}/></button>
+                    <button className="buttonCard"><img src={db.xbox.image} height={100} width={100}/></button>
                 </div>
                 <div className="checkCards">
                         <p>INFORMAÇÕES GIFT CARD SELECIONADO</p>
@@ -46,7 +50,7 @@ function Store(){
                 </div>
             </div>            
             ) : (
-                <p>bosta</p>
+                null
             )
             }
         </div>
