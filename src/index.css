@@ -75,4 +75,23 @@ hr{
   width: 450px;
 }
 
+.exploreCards{
+  border-style: solid;
+  border-color: black;
+  height: 400px;
+  width: 200px;
+  margin: 0 auto;
+  /* margin-right: 330px; */
+  display: inline-block;
+}
 
+.checkCards{
+  border-style: solid;
+  border-color: black;
+  height: 400px;
+  width: 500px;
+  /* margin-bottom: 200px; */
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: top;
+}

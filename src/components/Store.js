@@ -21,9 +21,16 @@ function Store(){
                 <img src="https://www.pngkit.com/png/full/238-2385610_free-gift-cards.png" width={300} alt=""/>
                 <div>
                     <hr />
-                    <h1>JUNTE-SE A GENTE</h1>
+                    <h1>ENCONTRE O SEU GIFT CARD</h1>
                 </div>
             </div>
+            <div className="exploreCards">
+                <p>Aqui conterá lista com os gift cards disponiveis</p>
+            </div>
+            <div className="checkCards">
+                    <p>INFORMAÇÕES GIFT CARD SELECIONADO</p>
+                </div>
+            
         </div>
     )
 }
