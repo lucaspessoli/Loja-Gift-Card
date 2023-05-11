@@ -3,21 +3,21 @@ import Navegation from '../Nave/Navegation';
 import axios from 'axios';
 
 function Store(){
-    const [giftImage, setGiftImage] = useState();
     const [db, SetDb] = useState();
-    var visivel = false
+    const [visivel, setVisivel] = useState(false);
 
     useEffect((handle)=>{
-        axios.get("http://localhost:5000/giftCards")
+        axios.get("http://localhost:5000/giftcard")
         .then((response)=>{
             const data = response.data
             SetDb(data);
+            setVisivel(true);
         })
     }, [])
 
-    function ExibirGiftCards(){
-        visivel = true;
-        console.log(db) //Teste
+    function debugTest(){
+        setVisivel(true);
+        console.log(db.steam.image) //Teste
     }
 
     return(
@@ -32,17 +32,23 @@ function Store(){
                     <h1>ENCONTRE O SEU GIFT CARD</h1>
                 </div>
             </div>
-            <div className="exploreCards">
-                <p>Aqui conterá lista com os gift cards disponiveis</p>
-            </div>
-            <div className="checkCards">
-                    <p>INFORMAÇÕES GIFT CARD SELECIONADO</p>
-            </div>
-            <div>
-            <button onClick={ExibirGiftCards}>Exibir</button>
-            <img src={giftImage}/>
-            </div>
 
+            { visivel ? (
+            <div>
+                <div className="exploreCards">
+
+                </div>
+                <div className="checkCards">
+                        <p>INFORMAÇÕES GIFT CARD SELECIONADO</p>
+                </div>
+                <div>
+                    <button onClick={debugTest}>debug Button</button>
+                </div>
+            </div>            
+            ) : (
+                <p>bosta</p>
+            )
+            }
         </div>
     )
 }

@@ -1,34 +1,45 @@
 {
-    "giftCards": [
+    "giftcard": 
         {
-            "giftCard10":{
-                "steam": {
-                    "image": "https://static.vecteezy.com/system/resources/previews/020/975/559/original/steam-logo-steam-icon-transparent-free-png.png",
-                    "estoque": 100
-                },
-                "ifood": {
-                    "image": "https://logopng.com.br/logos/ifood-43.png",
-                    "estoque": 299
-                },
-                "playstore": {
-                    "image": "https://1000logos.net/wp-content/uploads/2021/07/Google-Play-Logo.png",
-                    "estoque": 291
-                },
-                "playstation": {
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/800px-Playstation_logo_colour.svg.png",
-                    "estoque": 213
-                },
-                "xbox": {
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/XBOX_logo_2012.svg/1280px-XBOX_logo_2012.svg.png",
-                    "estoque": 39
-                },
-                "freefire": {
-                    "image": "https://logopng.com.br/logos/freefire-57.png",
-                    "estoque": 5
+            "steam": {
+                "image": "https://static.vecteezy.com/system/resources/previews/020/975/559/original/steam-logo-steam-icon-transparent-free-png.png",
+                "gift10":{
+                    "estoque": 10
+                }
+            },
+            "ifood": {
+                "image" : "https://logopng.com.br/logos/ifood-43.png",
+                "gift10": {
+                    "estoque": 104
+                }
+            },
+            "playstore": {
+                "image": "https://1000logos.net/wp-content/uploads/2021/07/Google-Play-Logo.png",
+                "gift10": {
+                    "estoque": 189
+                }
+            },
+            "playstation": {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/800px-Playstation_logo_colour.svg.png",
+                "gift10": {
+                    "estoque": 193
+                }
+            },
+            "xbox" : {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/XBOX_logo_2012.svg/1280px-XBOX_logo_2012.svg.png",
+                "gift10": {
+                    "estoque": 290
+                }
+            },
+            "freefire": {
+                "image": "https://logopng.com.br/logos/freefire-57.png",
+                "gift10": {
+                    "estoque": 29
                 }
             }
-        }
-    ],
+
+        },
+
     "users": [
         {
             "userAccount":{
@@ -39,5 +50,13 @@
             }
         }
     ]
-    
 }
+
+
+
+
+
+
+
+
+
