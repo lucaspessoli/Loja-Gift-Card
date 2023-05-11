@@ -2,14 +2,22 @@ import {useEffect, useState} from 'react';
 import Navegation from '../Nave/Navegation';
 import axios from 'axios';
 
-
 function Store(){
+    const [giftImage, setGiftImage] = useState();
+    const [db, SetDb] = useState();
+    var visivel = false
+
+    useEffect((handle)=>{
+        axios.get("http://localhost:5000/giftCards")
+        .then((response)=>{
+            const data = response.data
+            SetDb(data);
+        })
+    }, [])
 
     function ExibirGiftCards(){
-        axios.get("http://localhost:5000/users")
-            .then((response)=>{
-                console.log(response.data);
-            })
+        visivel = true;
+        console.log(db) //Teste
     }
 
     return(
@@ -29,8 +37,12 @@ function Store(){
             </div>
             <div className="checkCards">
                     <p>INFORMAÇÕES GIFT CARD SELECIONADO</p>
-                </div>
-            
+            </div>
+            <div>
+            <button onClick={ExibirGiftCards}>Exibir</button>
+            <img src={giftImage}/>
+            </div>
+
         </div>
     )
 }
